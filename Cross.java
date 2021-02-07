@@ -16,7 +16,7 @@
      Output: 
       C       S
      	R   S
-   	  	  O
+   	  O
      	R   S
       C       S
          
