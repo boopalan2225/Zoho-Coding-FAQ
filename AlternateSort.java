@@ -18,9 +18,17 @@ public class AlternateSort {
 		for(int i=0;i<l;i++) {
 			a[i]=Integer.parseInt(ch[i]);
 		}
+		int c=1;
 		System.out.print("{"+a[l-1]);
-		for(int i=0,j=l-2;i<l/2 || j>l/2;i++,j--) {
-			System.out.print(", "+a[i]+", "+a[j]);
+		for(int i=0,j=l-2;i<l/2;i++,j--) {
+			if(c<l) {
+				System.out.print(", "+a[i]);
+				c++;
+			}
+			if(c<l) {
+				System.out.print(", "+a[j]);
+				c++;
+			}
 		}
 		System.out.print("}");
 		
